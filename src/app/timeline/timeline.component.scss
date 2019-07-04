@@ -1,0 +1,35 @@
+.timeline {
+  list-style: none;
+  position: relative;
+  height: 100%;
+  padding: 0;
+}
+
+.timeline {
+  padding: 0;
+}
+
+.timeline > li {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.timeline > li:before,
+.timeline > li:after {
+  content: ' ';
+  display: table;
+}
+
+.timeline > li:after {
+  clear: both;
+}
+
+.timeline > li:before,
+.timeline > li:after {
+  content: ' ';
+  display: table;
+}
+
+.timeline > li:after {
+  clear: both;
+}
