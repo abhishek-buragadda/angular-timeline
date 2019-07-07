@@ -1,3 +1,4 @@
+/*
 li:before,
 li:after {
   content: ' ';
@@ -7,8 +8,9 @@ li:after {
 li:after {
   clear: both;
 }
+*/
 
-li > .timeline-panel {
+.timeline-panel {
   border: 1px solid #d4d4d4;
   border-radius: 2px;
   position: relative;
@@ -16,12 +18,12 @@ li > .timeline-panel {
   -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
   height: 100%;
+  margin: 0 16px;
 }
 
 .timeline-badge {
-  color: #fff;
+  color: #98ff61;
   width: 10px;
-  height: 100%;
   top: 0;
   bottom: 0;
   line-height: 50px;
@@ -38,11 +40,10 @@ li.timeline-inverted > .timeline-panel {
 .timeline-date {
   font-size: 12px;
   display: flex;
-  width: 160px;
-  text-align: left;
+  width: 300px;
   padding-right: 11px;
   position: relative;
-  top: 16px;
+  flex-flow: row-reverse;
 }
 
 .vertical-line {
@@ -63,7 +64,7 @@ li.timeline-inverted > .timeline-panel {
   display: block;
   height: calc(100% + 26px);
   width: 4px;
-  background-color: rgba(112, 131, 141, 0.25);
+  background-color: rgba(126, 110, 141, 0.25);
   margin: 0 auto;
 }
 .timeline-badge::before {
@@ -73,4 +74,13 @@ li.timeline-inverted > .timeline-panel {
   content: '';
   display: block;
   border-radius: 50%;
+}
+
+.timeline-badge:last-child::after{
+  display: none !important;
+}
+li > div.timeline-badge{
+  &:last-child::after{
+    display: none;
+  }
 }

@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-timeline-entry',
+  // tslint:disable-next-line:component-selector
+  selector: '[app-timeline-entry]',
   templateUrl: './timeline-entry.component.html',
   styleUrls: ['./timeline-entry.component.scss']
 })
